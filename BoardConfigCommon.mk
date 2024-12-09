@@ -77,3 +77,6 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery/root/system/etc/recovery.fstab
+
+## Inherit partitions flags
+include device/motorola/mt6768-common/partitions.mk
