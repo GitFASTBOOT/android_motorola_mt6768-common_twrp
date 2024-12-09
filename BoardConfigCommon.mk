@@ -80,3 +80,6 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery/root/system/etc/recovery.fstab
 
 ## Inherit partitions flags
 include device/motorola/mt6768-common/partitions.mk
+
+#twrp flags
+include device/motorola/mt6768-common/TW_flags.mk
