@@ -1,18 +1,4 @@
-# A/B
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    vbmeta \
-    vbmeta_system \
-    dtbo \
-    boot \
-    system \
-    system_ext \
-    vendor \
-    product
-
 # Partitions
-BOARD_FLASH_BLOCK_SIZE := 131072 
-BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 TARGET_USERIMAGES_USE_EXT4 := true
