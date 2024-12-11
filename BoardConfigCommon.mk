@@ -63,6 +63,9 @@ include device/mediatek/common/partitions.mk
 #twrp flags
 include device/mediatek/common/TW_flags.mk
 
+#init
+include device/mediatek/common/init/init.mk
+
 ifeq ($(BOARD_BOOTIMG_HEADER_VERSION),4)
   include device/mediatek/common/vendor_boot.mk
 endif
