@@ -50,7 +50,7 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 
 # size
 ifeq ($(BOARD_BOOTIMAGE_PARTITION_SIZE),33554432)
-  include $(COMMON_PATH)/configs/32mb.mk
+  include $(COMMON_PATH)/32mb.mk
 endif
 
 
