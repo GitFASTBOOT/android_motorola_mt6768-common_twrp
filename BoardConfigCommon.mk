@@ -58,17 +58,17 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery/root/system/etc/recovery.fstab
 
 ## Inherit partitions flags
-include device/motorola/mt6768-common/partitions.mk
+include device/mediatek/common/partitions.mk
 
 #twrp flags
-include device/motorola/mt6768-common/TW_flags.mk
+include device/mediatek/common/TW_flags.mk
 
 ifeq ($(BOARD_BOOTIMG_HEADER_VERSION),4)
-  include device/mediatek/common/configs/vendor_boot.mk
+  include device/mediatek/common/vendor_boot.mk
 endif
 
 ifeq ($(BOARD_BOOTIMG_HEADER_VERSION),2)
-  include device/mediatek/common/configs/boot.mk
+  include device/mediatek/common/boot.mk
 endif
 
 
