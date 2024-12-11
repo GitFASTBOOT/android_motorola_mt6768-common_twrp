@@ -83,3 +83,14 @@ include device/motorola/mt6768-common/partitions.mk
 
 #twrp flags
 include device/motorola/mt6768-common/TW_flags.mk
+
+ifeq ($(BOARD_BOOTIMG_HEADER_VERSION),4)
+  include device/mediatek/common/configs/vendor_boot.mk
+endif
+
+ifeq ($(BOARD_BOOTIMG_HEADER_VERSION),2)
+  include device/mediatek/common/configs/boot.mk
+endif
+
+
+
