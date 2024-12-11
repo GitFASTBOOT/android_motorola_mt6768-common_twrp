@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-COMMON_PATH := device/motorola/mt6768-common
+COMMON_PATH := device/mediatek/common
 
 TARGET_RECOVERY_DEVICE_DIRS := \
     $(COMMON_PATH) \
